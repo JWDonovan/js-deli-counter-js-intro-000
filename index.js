@@ -7,7 +7,7 @@ function nowServing(array) {
   if (array.length === 0) {
     return 'There is nobody waiting to be served!';
   } else {
-    let person = array.unshift();
+    let person = array.shift();
     return `Currently serving ${person}`;
   }
 }
