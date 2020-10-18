@@ -19,11 +19,13 @@ function currentLine(line) {
     let string = 'The line is currently: ';
 
     for (let i = 0; i < line.length; i++) {
-      string += `${i}. `;
+      string += `${i}. ${line[i]}`;
 
       if (i !== line.length - 1) {
         string += ', ';
       }
     }
+
+    return string;
   }
 }
